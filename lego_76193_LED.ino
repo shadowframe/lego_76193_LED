@@ -58,14 +58,36 @@ void setRegisterPin(int index, int value){
 
 void loop(){
 
+  // Cockpit LILA Lights
   setRegisterPin(0, HIGH);
   setRegisterPin(1, HIGH);
-  setRegisterPin(2, LOW);
-  setRegisterPin(3, LOW);
+  setRegisterPin(2, HIGH);
+  setRegisterPin(3, HIGH);
+
+  // Wing Left BLUE Lights
   setRegisterPin(4, LOW);
   setRegisterPin(5, LOW);
   setRegisterPin(6, LOW);
   setRegisterPin(7, LOW);
+
+  // Wing Right BLUE Lights
+  setRegisterPin(8, LOW);
+  setRegisterPin(9, LOW);
+  setRegisterPin(10, LOW);
+  setRegisterPin(11, LOW);
+
+  // Backwing Left BLUE Lights
+  setRegisterPin(12, LOW);
+
+  // Backwing Right BLUE Lights
+  setRegisterPin(13, LOW);
+
+  // Headlight RED Light
+  setRegisterPin(14, LOW);
+
+  // not used
+  setRegisterPin(15, LOW);
+
   Serial.println("hell");
 
   writeRegisters();  //MUST BE CALLED TO DISPLAY CHANGES
@@ -73,14 +95,36 @@ void loop(){
 
   delay(1000);
 
+  // Cockpit LILA Lights
   setRegisterPin(0, LOW);
   setRegisterPin(1, LOW);
-  setRegisterPin(2, HIGH);
-  setRegisterPin(3, HIGH);
-  setRegisterPin(4, HIGH);
-  setRegisterPin(5, HIGH);
-  setRegisterPin(6, HIGH);
-  setRegisterPin(7, HIGH);
+  setRegisterPin(2, LOW);
+  setRegisterPin(3, LOW);
+
+  // Wing Left BLUE Lights
+  setRegisterPin(4, LOW);
+  setRegisterPin(5, LOW);
+  setRegisterPin(6, LOW);
+  setRegisterPin(7, LOW);
+
+  // Wing Right BLUE Lights
+  setRegisterPin(8, LOW);
+  setRegisterPin(9, LOW);
+  setRegisterPin(10, LOW);
+  setRegisterPin(11, LOW);
+
+  // Backwing Left BLUE Lights
+  setRegisterPin(12, LOW);
+
+  // Backwing Right BLUE Lights
+  setRegisterPin(13, LOW);
+
+  // Headlight RED Light
+  setRegisterPin(14, LOW);
+
+  // not used
+  setRegisterPin(15, LOW);
+
   Serial.println("dunkel");
 
   
