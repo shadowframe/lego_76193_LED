@@ -133,3 +133,57 @@ void loop(){
 
    delay(1000);
 }
+
+void cockpitOn() {
+  // turn the Cockpitlights on
+  // Cockpit LILA Lights
+  setRegisterPin(0, HIGH);
+  setRegisterPin(1, HIGH);
+  setRegisterPin(2, HIGH);
+  setRegisterPin(3, HIGH);
+}
+
+void cockpitOff() {
+  // turn the CockpitLights off
+  // Cockpit LILA Lights
+  setRegisterPin(0, LOW);
+  setRegisterPin(1, LOW);
+  setRegisterPin(2, LOW);
+  setRegisterPin(3, LOW);
+}
+
+void wingLeftOn() {
+  // turn the wingLeftLights on
+  // Wing Left BLUE Lights
+  setRegisterPin(4, HIGH);
+  setRegisterPin(5, HIGH);
+  setRegisterPin(6, HIGH);
+  setRegisterPin(7, HIGH); 
+}
+
+void wingLeftOff() {
+  // turn the wingLeftLights off
+  // Wing Left BLUE Lights
+  setRegisterPin(4, LOW);
+  setRegisterPin(5, LOW);
+  setRegisterPin(6, LOW);
+  setRegisterPin(7, LOW); 
+}
+
+void wingRightOn() {
+  // turn the wingRightLights on
+  // Wing Right BLUE Lights
+  setRegisterPin(8, HIGH);
+  setRegisterPin(9, HIGH);
+  setRegisterPin(10, HIGH);
+  setRegisterPin(11, HIGH); 
+}
+
+void wingRightOff() {
+  // turn the wingRightLights off
+  // Wing Right BLUE Lights
+  setRegisterPin(8, LOW);
+  setRegisterPin(9, LOW);
+  setRegisterPin(10, LOW);
+  setRegisterPin(11, LOW);
+}
